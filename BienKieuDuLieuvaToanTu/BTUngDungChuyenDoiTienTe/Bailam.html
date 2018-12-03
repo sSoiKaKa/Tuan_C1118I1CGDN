@@ -3,22 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <title>Convert Money</title>
 </head>
 
 <body>
-    <form>
-        <input type="number" name="amount">
-    </form>
-    <select name="From Currency">
+    <p>Amount</p><br>
+    <form id="exchange">
+        <input type="number" name="amount" id="amount">
+    </form><br>
+    <p>From Currency</p><br>
+    <select name="From Currency" id="fromCurrency">
         <option value="0">Chon loai tien hien tai</option>
-        <option value="1">VND</option>
-    </select>
-    <select name="To Currency">
+        <option value="VND">VND</option>
+    </select><br>
+    <p>To Currency</p><br>
+    <select name="To Currency" id="toCurrency">
         <option value="0">Chon loai tien muon chuyen doi</option>
-        <option value="1">USD</option>
-    </select>
+        <option value="USD" id="toCurrency">USD</option>
+    </select><br>
     <button type="button" onclick="showMessage();">Convert</button>
+    <script src="bailam.js"></script>
 </body>
 
 </html>
