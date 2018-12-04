@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<input type="checkbox" name="good" value="good" id="goodId" onclick="checkGood()">Good<br>
+<input type="checkbox" name="fast" value="fast" id="fastId" onclick="checkFast()">Fast<br>
+<input type="checkbox" name="cheap" value="cheap" id="cheapId" onclick="checkCheap()">Cheap<br>
+
+<body>
+    <script>
+        function checkGood() {
+            var good = document.getElementById("goodId").value;
+            var fast = document.getElementById("fastId").value;
+            var cheap = document.getElementById("cheapId").value;
+            if (good && fast) {
+                document.getElementById("cheapId").checked = false;
+            } else if (good && cheap) {
+                document.getElementById("fastId").checked = false;
+            }
+        }
+        function checkFast() {
+            var good = document.getElementById("goodId").value;
+            var fast = document.getElementById("fastId").value;
+            var cheap = document.getElementById("cheapId").value;
+
+            if (fast && cheap) {
+                document.getElementById("goodId").checked = false;
+            } else if (fast && good) {
+                document.getElementById("cheapId").checked = false;
+            }
+        }
+
+        function checkCheap() {
+            var good = document.getElementById("goodId").value;
+            var fast = document.getElementById("fastId").value;
+            var cheap = document.getElementById("cheapId").value;
+
+            if (cheap && good) {
+                document.getElementById("fastId").checked = false;
+            } else if (cheap && fast) {
+                document.getElementById("goodId").checked = false;
+            }
+        }
+    </script>
+</body>
+
+</html>
