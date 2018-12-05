@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var a = parseInt(prompt("nhap a"));
+        var b = parseInt(prompt("nhap b "));
+        var c = parseInt(prompt("nhap c "));
+        var max;
+        max = a;
+        if (a <= b) {
+            if (b > c) {
+                max = b;
+            } else if (b < c) {
+                max = c;
+            }
+        } else if (a <= c) {
+            max = c;
+        }
+        alert("max= " + max);
+    </script>
+</body>
+
+</html>

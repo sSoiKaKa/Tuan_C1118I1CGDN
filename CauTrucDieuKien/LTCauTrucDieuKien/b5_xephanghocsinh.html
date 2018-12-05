@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var chuyencan = parseFloat(prompt("nhap diem chuyen can: "));
+        var giuaki = parseFloat(prompt("Nhap diem giua ki: "));
+        var cuoiki = parseFloat(prompt("Nhap diem cuoi ki"));
+        var sum;
+        sum = (chuyencan + giuaki) * 0.2 + cuoiki * 0.6;
+        if (sum >= 8) {
+            alert("Loai A");
+        } else if (sum >= 6.5) {
+            alert("Loai B");
+        } else if (sum >= 5) {
+            alert("Loai C");
+        } else if (sum >= 4) {
+            alert("Loai D");
+        } else {
+            alert("Loai F");
+        }
+    </script>
+</body>
+
+</html>
