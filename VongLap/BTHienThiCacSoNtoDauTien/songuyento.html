@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<body>
+    <script>
+        var number = parseInt(prompt("Please enter the prime number you want to display: "));
+        var count = 0;
+        var N = 2;
+        var check = true;
+        while (count <= number) {
+            for (var i = 2; i <= N / 2; i++) {
+                if (N % i == 0) {
+                    check = false;
+                    break;
+                } else check = true;
+            }
+            if (check) {
+                document.write(N + "   ");
+                count += 1;
+            }
+            N++;
+        }
+    </script>
+</body>
+
+</html>
