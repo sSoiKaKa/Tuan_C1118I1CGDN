@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+<body>
+    <script>
+        var x = [1, 2, 3, 4, 5, 4, 3, 2, 6, 4, 3, 2, 0];
+        var max = x[0];
+        var index = 0;
+        for (var i = 0; i < x.length; i++) {
+            if (x[i] > max) {
+                max = x[i];
+                index = i + 1;
+            }
+        }
+        document.write("max = " + max + " at position " + index);
+    </script>
+</body>
+
+</html>
