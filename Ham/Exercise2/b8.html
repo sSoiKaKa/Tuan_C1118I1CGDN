@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var arr = [1, 2, 3, 4, 5, 6, 7, 8];
+        showExchange(arr);
+
+        function showExchange(arr) {
+            var temp;
+            var lengthArr = arr.length;
+            var length = (lengthArr % 2)?(lengthArr / 2) : (lengthArr - 1)/2;
+            for (var i = 0; i < length; i++) {
+                temp = arr[i];
+                arr[i] = arr[lengthArr - 1 - i];
+                arr[lengthArr - 1 - i] = temp;
+            }
+            console.log(arr);
+        }
+    </script>
+</body>
+
+</html>

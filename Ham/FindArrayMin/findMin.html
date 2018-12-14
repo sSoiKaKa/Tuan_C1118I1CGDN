@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function getMinArray(arr) {
+            if (arr.lenght == 0)
+                return -1;
+            var min = arr[0];
+            for (var i = 1; i < arr.lenght; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+            return min;
+        }
+        var arr1 = [2, 16, 54, 32, 44, 56, 732, 11];
+        var min = getMinArray(arr1);
+        alert(min);
+    </script>
+</body>
+
+</html>

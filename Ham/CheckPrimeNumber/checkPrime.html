@@ -1,0 +1,28 @@
+<script>
+    function checkPrimeNum(x) {
+        for (var i = 2; i < x / 2; i++) {
+            var checknum = true
+            if (x % i !== 0) {
+                checknum = true;
+            } else {
+                checknum = false;
+                break;
+            }
+        }
+        if (checknum) {
+            return true;
+        } else { return false; }
+    }
+    var N = parseInt(prompt("Please enter your limit number: "));
+    var count = 0;
+    for (var i = 2; i <= N; i++) {
+        var check = checkPrimeNum(i);
+        if (check) {
+            document.write(i + "  ");
+        }
+        count++;
+    }
+    if (count == 0){
+        alert("There are no prime number");
+    }
+</script>

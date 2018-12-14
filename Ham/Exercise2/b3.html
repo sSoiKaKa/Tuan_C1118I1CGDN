@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        //Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+        function showFactorial(n) {
+            var factorial = 1;
+            for (var i = 1; i <= n; i++) {
+                factorial *= i;
+            }
+           alert("The factorial is: " + factorial);
+        }
+        var n = parseInt(prompt("Please enter your number to caculate factorial: "));
+        showFactorial(n);
+    </script>
+</body>
+
+</html>

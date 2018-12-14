@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function findValue(x, arr) {
+            var count = 0;
+            var arr1 = [];
+            var n = 0;
+            for (var i = 0; i < arr.length; i++) {
+                if (x == arr[i]) {
+                    arr1[n] = i + 1;
+                    n++;
+                    count++;
+                }
+            }
+            if (count == 0) {
+                alert("can't find this value in array.")
+            } else {
+                alert("there are " + count + " places can be found x" + " at " + arr1)
+            }
+        }
+        var arr = ["a", "b", "t", "a", "a", 1, 2, 3, 4];
+        var x = prompt("input x: ");
+        findValue(x, arr);
+    </script>
+</body>
+
+</html>
