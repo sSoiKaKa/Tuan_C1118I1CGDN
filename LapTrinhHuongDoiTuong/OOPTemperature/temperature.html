@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Temperature</title>
+</head>
+
+<body>
+    <script>
+        function convertToF(celsius) {
+            var fahreinheit = (celsius - 32) / 1.8;
+            document.write("Convert to F is" + fahreinheit + "<br>");
+        }
+        function convertToK(celsius) {
+            var kelvin = celsius + 273;
+            if (kelvin < 0) {
+                document.write("Your Celsius is wrong");
+            } else {
+                document.write("Convert to K is: " + kelvin );
+            }
+        }
+        var celsius = parseFloat(prompt("Input Celsius: "));
+        convertToF(celsius);
+        convertToK(celsius);
+    </script>
+</body>
+
+</html>

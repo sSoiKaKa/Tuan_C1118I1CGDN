@@ -13,6 +13,20 @@
             return this.year;
         }
     }
+    var setDate = function (day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        this.setDay = function (day) {
+            this.day = day;
+        }
+        this.setMonth = function (month) {
+            this.month = month;
+        }
+        this.setYear = function (year) {
+            this.year = year;
+        }
+    }
     var date = new myDate(13, 12, 2018);
     var day = date.getDay();
     var month = date.getMonth();

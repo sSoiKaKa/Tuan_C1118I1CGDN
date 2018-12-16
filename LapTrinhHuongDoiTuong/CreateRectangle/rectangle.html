@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Rectangle</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="1000px" height="500px" style="border: 1px solid #f8059b">
+        <script>
+            function showArea(lenght, width) {
+                var area = lenght * width;
+                document.write("area is: " + area);
+            }
+            function showPerimeter(lenght, width) {
+                var perimeter = lenght * width;
+                document.write("perimeter is: " + perimeter);
+            }
+            function createRectangle(lenght, width) {
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.beginPath();
+                ctx.moveTo(10, 10);
+                ctx.lineTo(10 + lenght, 10);
+                ctx.lineTo(10 + lenght, 10 + width);
+                ctx.lineTo(10, 10 + width);
+                ctx.lineTo(10, 10);
+                ctx.strokeStyle = "red";
+                ctx.stroke();
+            }
+            var lenght = parseFloat(prompt("lenght: "));
+            var width = parseFloat(prompt("width: "));
+            createRectangle(lenght, width);
+            showArea(lenght, width);
+            showPerimeter(lenght, width);
+        </script>
+</body>
+
+</html>
