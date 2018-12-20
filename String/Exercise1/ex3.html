@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var str = prompt("Enter your sentence: ");
+        var vowel = 0;
+        var consonant = 0;
+        console.log(str);
+        for (i = 0; i < str.length; i++) {
+            if (isvowel(str[i])) {
+                vowel++;
+            } else if (isconsonant(str[i])) {
+                consonant++;
+            }
+        }
+        console.log(vowel);
+        console.log(consonant);
+        function isvowel(s) {
+            return /^[ueoai]$/i.test(s);
+        }
+        function isconsonant(s) {
+            var pattern = /^[bcdfghklmnpqrstvxyz]/i;
+            return pattern.test(s);
+        }
+    </script>
+</body>
+
+</html>

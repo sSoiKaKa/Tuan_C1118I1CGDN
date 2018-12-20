@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function validateDay(str){
+            regexp = /^(0[1-9]|[1-2][0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)[0-9]{2})$/
+            if (regexp.test(str)){
+                return true;
+            } return false;
+        }
+        var date="28/12/2000";
+        console.log(validateDay(date));
+        date = "45/11/2098";
+        console.log(validateDay(date));
+    </script>
+</body>
+
+</html>

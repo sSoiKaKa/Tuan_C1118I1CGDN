@@ -1,0 +1,19 @@
+<script>
+
+    // 1
+    var born = new Date(2000, 8, 19, 6, 00, 00, 00);
+    // 2
+    var currentDate = new Date();
+    // 3
+    var miliseconds = currentDate.getTime() - born.getTime();
+    console.log("miliseconds: ", miliseconds);
+    console.log("seconds: ", Math.floor(miliseconds/1000));
+    console.log("Minutes: ", Math.floor(miliseconds/(1000*60)));
+    console.log("Hours: ", Math.floor(miliseconds/(1000*60*60)));
+    console.log("Days: ", Math.floor(miliseconds/(1000*60*60*24)));
+    console.log("Months: ", Math.floor(miliseconds/(1000*60*60*24*30)));
+    console.log("Years: ", Math.floor(miliseconds/(1000*60*60*24*30*12)));
+    // Year
+    console.log("Years: ", currentDate.getFullYear() - born.getFullYear());
+
+</script>

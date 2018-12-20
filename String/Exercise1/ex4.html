@@ -1,0 +1,16 @@
+<script>
+function validatePassword(str){
+    RegExp = /^[A-Za-z0-9!$%*@#/:]+[A-Za-z0-9!@#$%&*/:]{7}/;
+    if (RegExp.test(str)){
+        return true;
+    } return false;
+}
+var pass = "_hfdjngjn.";
+console.log(validatePassword(pass));
+pass = "fhdn52";
+console.log(validatePassword(pass));
+pass = "#htmd1!Ad";
+console.log(validatePassword(pass));
+pass = "!@#$%&*:/!";
+console.log(validatePassword(pass));
+</script>

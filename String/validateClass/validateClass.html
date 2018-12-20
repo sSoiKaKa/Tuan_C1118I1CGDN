@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function validateClass(str) {
+            regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
+            if (regexp.test(str)) {
+                return true;
+            } return false;
+        }
+        var class1 = "C0318G";
+        console.log(validateClass(class1));
+        class1 = "M0318G";
+        console.log(validateClass(class1));
+        class1 = "P0323A";
+        console.log(validateClass(class1));
+    </script>
+</body>
+
+</html>

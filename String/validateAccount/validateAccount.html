@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function validateAccount(str){
+            regexp = /^[_a-z0-9]{6,}$/;
+            if(regexp.test(str)){
+                return true;
+            } return false;
+        }
+        var account = "_hdm4vb";
+        console.log(validateAccount(account));
+        account = "________";
+        console.log(validateAccount(account));
+        account = "hmdk";
+        console.log(validateAccount(account));
+        account = "1[fdv-.";
+        console.log(validateAccount(account));
+    </script>
+</body>
+
+</html>
