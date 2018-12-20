@@ -1,0 +1,22 @@
+<script>
+    //Viết chương trình khởi tạo mảng số nguyên. 
+    //Hiển hiện giá trị lớn nhất trong mảng đó.
+    //In ra giá trị trung bình của các phần tử trong mảng.
+    var arr = [];
+    var leng = parseInt(prompt("Enter the length of array: "));
+    for (var i = 0; i < leng; i++) {
+        arr[i] = parseInt(prompt("Input a[" + i + "] : "));
+    }
+    var max = arr[0];
+    for (var j = 0; j < leng; j++) {
+        if (arr[j] > max) {
+            max = arr[j];
+        }
+    }
+    var sum = 0;
+    for (var i = 0; i < leng; i++) {
+        sum += a[i];
+    }
+    var avg = sum / leng;
+    document.write("max is: " + max + "<br>" + "average is: " + avg);
+</script>

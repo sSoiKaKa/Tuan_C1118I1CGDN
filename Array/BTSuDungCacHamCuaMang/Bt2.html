@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<body>
+    <script>
+        var number = prompt("Please enter your number: ");
+        var arr = number.split("");
+        var result = "";
+        for (var i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0 && i + 1 < arr.length && arr[i + 1] % 2 === 0) {
+                result += arr[i] + "-";
+            } else {
+                result += arr[i];
+            }
+        }
+        document.write(result);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+
+<body>
+    <script>
+        var x = [2, 3, -5, 1000, 1.2, 4, 7, 9];
+        var first = 0;
+        var last = x.length - 1;
+        while (first < last) {
+            var b = x[first];
+            x[first] = x[last];
+            x[last] = b;
+            first++;
+            last--;
+        }
+        document.write(x);
+    </script>
+</body>
+
+</html>

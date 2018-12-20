@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+
+<body>
+    <script>
+        var str = prompt("Enter your string: ");
+        var UPPER = 'ABCDEFGHIKLMNOPQRSTUVXYZ';
+        var LOWER = 'abcdefghiklmnopqrstuvxyz';
+        var result = [];
+        for (var x = 0; x < str.length; x++) {
+            if (UPPER.indexOf(str[x]) !== -1) {
+                result.push(str[x].toLowerCase())
+            } else if (LOWER.indexOf(str[x]) !== -1) {
+                result.push(str[x].toUpperCase());
+            } else {
+                result.push(str[x]);
+            }
+        }
+        alert(result.join(''));
+    </script>
+</body>
+
+</html>

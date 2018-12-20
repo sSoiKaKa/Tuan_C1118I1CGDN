@@ -1,0 +1,16 @@
+<script>
+    var arr = [];
+    var n = 10;
+    var atMax = 0;
+    for (var i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("input arr[" + i + "] : "));
+    }
+    var max = arr[0];
+    for (var j = 1; j < n; j++) {
+        if (arr[j] > max) {
+            max = arr[j];
+            atMax = j;
+        }
+    }
+    document.write("Max is: " + max + "at position" + atMax);
+</script>

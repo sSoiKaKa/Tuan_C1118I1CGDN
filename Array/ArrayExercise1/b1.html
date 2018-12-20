@@ -1,0 +1,16 @@
+<script>
+    // Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử. 
+    // Chương trình thực hiện tính và hiển thị xem có bao nhiêu số nguyên lớn hơn hoặc bằng 10.
+    var arr = [];
+    var n = 10;
+    var count = 0;
+    for (var i = 0; i < n; i++) {
+        arr[i] = parseInt(prompt("input arr[" + i + "] : "));
+    }
+    for (var j = 0; j < n; j++) {
+        if (arr[j] >= 10) {
+            count += 1;
+        }
+    }
+    alert("there are " + count + " numbers in this array are bigger than or equal with 10");
+</script>
