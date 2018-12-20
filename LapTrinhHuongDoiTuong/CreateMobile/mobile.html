@@ -1,0 +1,17 @@
+<script>
+    var mobile = function (pin, model, color) {
+        this.pin = pin;
+        this.model = model;
+        this.color = color;
+        this.showPin = function () {
+            console.log(this.pin);
+        }
+        this.showModel = function () {
+            console.log(this.model);
+        }
+        this.showColor = function () {
+            console.log(this.color);
+        }
+    };
+    var iphoneX = new mobile(100, "iphoneX", green);
+</script>
